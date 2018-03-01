@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Круглова](https://up.htmlacademy.ru/htmlcss/20/user/547709).
-* Наставник: [Александр Уразаев](https://up.htmlacademy.ru/htmlcss/20/user/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
