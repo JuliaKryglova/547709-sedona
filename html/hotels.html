@@ -24,9 +24,34 @@
 
     <!-- Основное содержимое -->
     <main>
-      <!-- Здесь будет форма поиска-->
+      <!-- Здесь форма поиска-->
       <section class="search-form">
-        <form>
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <p> Инфраструктура: </p>
+          <input type="checkbox" name="swimming pool" checked>
+          <label for="swimming pool">Бассейн</label>
+          <br>
+          <input type="checkbox" name="parking">
+          <label for="parking">Парковка</label>
+          <br>
+          <input type="checkbox" name="wi-fi">
+          <label for="wi-fi">wi-fi</label>
+          <p> Тип жилья</p>
+          <input type="checkbox" name="hotel" checked>
+          <label for="hotel">Отель</label>
+          <br>
+          <input type="checkbox" name="motel" checked>
+          <label for="motel">Мотель</label>
+          <br>
+          <input type="checkbox" name="apartment" checked>
+          <label for="apartment">Апартаменты</label>
+          <p> </p>
+          <label for="cost">Стоимость в сутки (р)</label>
+          <br>
+          0 <input type="range" name="cost" min="0" max="50000" step="100"> 3000
+          <br>
+          <input type="submit" value="Показать">
         </form>
       </section>
       <!-- Сортировка-->
@@ -83,12 +108,12 @@
       <a href="https://www.instagram.com/explore/tags/visitsedona/"> #visitsedona </a>
       <div class="footer-social">
         <ul>
-          <li><a href="#"> Твиттер </a></li>
-          <li><a href="#"> Фейсбук </a></li>
-          <li><a href="#"> Ютуб </a></li>
+          <li><a class="social-button" href="#"> Твиттер </a></li>
+          <li><a class="social-button" href="#"> Фейсбук </a></li>
+          <li><a class="social-button" href="#"> Ютуб </a></li>
         </ul>
       </div>
-      <a href="https://htmlacademy.ru"> htmlacademy </a>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy </a>
     </footer>
 
   </body>
