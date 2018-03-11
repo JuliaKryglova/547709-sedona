@@ -29,31 +29,46 @@
         <h2 class="visually-hidden">Форма поиска</h2>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <p> Инфраструктура: </p>
-          <input type="checkbox" name="swimming pool" checked>
-          <label for="swimming pool">Бассейн</label>
-          <br>
-          <input type="checkbox" name="parking">
+          <div>
+          <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+          <label for="swimming-pool">Бассейн</label>
+          </div>
+          <div>
+          <input type="checkbox" name="parking" id="parking">
           <label for="parking">Парковка</label>
-          <br>
-          <input type="checkbox" name="wi-fi">
+          </div>
+          <div>
+          <input type="checkbox" name="wi-fi" id="wi-fi">
           <label for="wi-fi">wi-fi</label>
+          </div>
           <p> Тип жилья</p>
-          <input type="checkbox" name="hotel" checked>
+          <div>
+          <input type="checkbox" name="hotel" id="hotel" checked>
           <label for="hotel">Отель</label>
-          <br>
-          <input type="checkbox" name="motel" checked>
+          </div>
+          <div>
+          <input type="checkbox" name="motel" id="motel" checked>
           <label for="motel">Мотель</label>
-          <br>
-          <input type="checkbox" name="apartment" checked>
+          </div>
+          <div>
+          <input type="checkbox" name="apartment" id="apartment" checked>
           <label for="apartment">Апартаменты</label>
-          <p> </p>
-          <label for="cost">Стоимость в сутки (р)</label>
-          <br>
-          0 <input type="range" name="cost" min="0" max="50000" step="100"> 3000
-          <br>
-          <input type="submit" value="Показать">
+          </div>
+          <div>
+          <label for="minmax">Стоимость в сутки (р)</label>
+          </div>
+          <div>
+          <input type="number" name="minmax" id="minmax" placeholder="от 0 до 3000">
+          </div>
+          <!-- Здесь будет слайдер-->
+          <div>
+            <span> </span>
+            <span> </span>
+          </div>
+          <button type="submit">Показать</button>
         </form>
       </section>
+
       <!-- Сортировка-->
       <section class="sorting">
         <h2> Найдено: 3 </h2>

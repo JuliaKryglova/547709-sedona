@@ -28,7 +28,7 @@
         <img src="img/background.jpg" width="768" height="512" alt="Sedona">
       <section class="features">
         <h1> Седона — небольшой городок в АРИЗОНЕ,заслуживающий большего! </h1>
-        <h2 tabindex="0"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </h2>
+        <h2> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </h2>
         <ul class="features-list">
           <li class="features-item">
             <h3> Настоящий городок </h3>
@@ -68,34 +68,35 @@
 
       <!-- Здесь форма -->
       <section class="registration-form">
-        <h2 tabindex="0"> Заинтересовались? </h2>
+        <h2> Заинтересовались? </h2>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button">Поиск гостиницы в Седоне</button>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-          Поиск гостиницы в Седоне<br>
+          <div>
           <label for="date-of-arrival">Дата заезда</label>
-          <input type="date" name="date-of-arrival">
+          <input type="text" name="date-of-arrival" id="date-of-arrival">
           <!-- Здесь будет значок календаря -->
           <span>
-            <img src="" width="" height="" alt="calendar">
           </span>
-          <br>
+          </div>
+          <div>
           <label for="date-of-departure">Дата выезда</label>
-          <input type="date" name="date-of-departure">
+          <input type="text" name="date-of-departure" id="date-of-departure">
           <!-- Здесь будет значок календаря -->
           <span>
-            <img src="" width="" height="" alt="calendar">
           </span>
-          <br>
+          </div>
           <label for="adults">Взрослые</label>
           <button type="button"> + </button>
-          <input type="text" id="adults" name="name" value="2">
+          <input type="number" id="adults" name="name" value="2">
           <button type="button"> - </button>
           <label for="children">Дети</label>
           <button type="button"> + </button>
-          <input type="text" id="children" name="name" value="0">
+          <input type="number" id="children" name="name" value="0">
           <button type="button"> - </button>
-          <br>
-          <input type="submit" value="Найти">
+          <div>
+          <button type="submit">Найти</button>
+          </div>
         </form>
       </section>
 
