@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="css\style.css" rel="stylesheet" type="text/css">
+    <link href="css\normalize.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -11,7 +14,7 @@
           <nav class="main-navigation">
           <!-- сюда вставить лого в панель навигации -->
             <a class="main-header-logo">
-              <img src=""img/logo.png"" width="138" height="70" alt="logo">
+              <img src="img/logo.png" width="138" height="70" alt="logo">
             </a>
             <ul class="site-navigation">
               <li><a href="#">Информация</a></li>
@@ -27,7 +30,7 @@
       <!-- основная картинка-заголовок с уникальным шрифтом -->
         <img src="img/background.jpg" width="768" height="512" alt="Sedona">
       <section class="features">
-        <h1> Седона — небольшой городок в АРИЗОНЕ,заслуживающий большего! </h1>
+        <h1> Седона — небольшой городок в АРИЗОНЕ, заслуживающий большего! </h1>
         <h2> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </h2>
         <ul class="features-list">
           <li class="features-item">
@@ -37,12 +40,14 @@
             <img src="img/features1.jpg" width="511" height="256" alt="features1">
           </li>
           <!-- Перечисление доп.фишек -->
-          <h4> Жилье </h4>
-          <p> Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
-          <h4> Еда </h4>
-          <p> Всегда заказывайте фирменный бургер, вы не разочаруетесь! </p>
-          <h4> Сувениры </h4>
-          <p> Не только китайского, но и местного производства! </p>
+          <div class="additional-features">
+            <h4> Жилье </h4>
+            <p> Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+            <h4> Еда </h4>
+            <p> Всегда заказывайте фирменный бургер, вы не разочаруетесь! </p>
+            <h4> Сувениры </h4>
+            <p> Не только китайского, но и местного производства! </p>
+          </div>
           <li class="features-item">
             <img src="img/features2.jpg" width="511" height="255" alt="features2">
             <h3> Там есть мост дьявола </h3>
@@ -67,35 +72,39 @@
         </ul>
 
       <!-- Здесь форма -->
-      <section class="registration-form">
+      <section class="search">
         <h2> Заинтересовались? </h2>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-          <div>
-          <label for="date-of-arrival">Дата заезда</label>
-          <input type="text" name="date-of-arrival" id="date-of-arrival">
-          <!-- Здесь будет значок календаря -->
-          <span>
-          </span>
+          <div class="booking-parameter">
+            <label for="date-of-arrival">Дата заезда</label>
+            <input type="text" name="date-of-arrival" id="date-of-arrival">
+            <!-- Здесь будет значок календаря -->
+            <span class="icon-calendar">
+            </span>
           </div>
-          <div>
-          <label for="date-of-departure">Дата выезда</label>
-          <input type="text" name="date-of-departure" id="date-of-departure">
-          <!-- Здесь будет значок календаря -->
-          <span>
-          </span>
+          <div class="booking-parameter">
+            <label for="date-of-departure">Дата выезда</label>
+            <input type="text" name="date-of-departure" id="date-of-departure">
+            <!-- Здесь будет значок календаря -->
+            <span class="icon-calendar">
+            </span>
           </div>
-          <label for="adults">Взрослые</label>
-          <button type="button"> + </button>
-          <input type="number" id="adults" name="name" value="2">
-          <button type="button"> - </button>
+          <div class="booking-parameter">
+            <label for="adults">Взрослые</label>
+            <button type="button" class="plus-button"> + </button>
+            <input type="number" id="adults" name="name" value="2">
+            <button type="button" class="minus-button"> - </button>
+          </div>
+          <div class="booking-parameter">
           <label for="children">Дети</label>
-          <button type="button"> + </button>
+          <button type="button" class="plus-button"> + </button>
           <input type="number" id="children" name="name" value="0">
-          <button type="button"> - </button>
-          <div>
-          <button type="submit">Найти</button>
+          <button type="button" class="minus-button"> - </button>
+        </div>
+          <div class="submit-button">
+          <button type="submit" class="submitbutton">Найти</button>
           </div>
         </form>
       </section>
@@ -111,13 +120,13 @@
     <footer class="main-footer">
       <a href="https://www.instagram.com/explore/tags/visitsedona/"> #visitsedona </a>
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#"> Твиттер </a></li>
           <li><a class="social-button" href="#"> Фейсбук </a></li>
           <li><a class="social-button" href="#"> Ютуб </a></li>
         </ul>
       </div>
-      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy </a>
+      <a class="academy-button" href="https://htmlacademy.ru/intensive/htmlcss"> websiteby </a>
     </footer>
 
   </body>

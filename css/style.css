@@ -1,0 +1,310 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: f2f2f2; /*добавить тень*/
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+.main-header {
+}
+
+.main-navigation {
+  font-weight: bold;
+}
+
+.main-header-logo {
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #000000;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+.features {
+  line-height: 21px;
+}
+
+.features h1 {
+  font-size: 21px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list li:first-child,
+.features-list li:nth-child(2) {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+/*не срабатывает стиль для 2 пункта*/
+
+.additional-features {
+  background-color: #eeeeee;
+}
+
+.search h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search p {
+  line-height: 24px;
+}
+
+.search-button {
+  font-size: 21px;
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #766257;
+  border: none;
+}
+
+.search-button:hover {
+  background-color: #604e44;
+}
+
+.search-button:focus {
+  background-color: #503e34;
+}
+
+.booking-parameter {
+  font-weight: bold;
+}
+
+.booking-parameter input {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking-parameter input:hover {
+  background-color: #ebebeb;
+}
+
+.booking-parameter input:focus {
+  background-color: #ffffff;
+}
+
+.minus-button {
+}
+
+.minus-button:hover {
+}
+
+.minus-button:focus {
+}
+
+.plus-button {
+}
+
+.plus-button:hover {
+}
+
+.plus-button:focus {
+}
+
+.icon-calendar {
+}
+
+.icon-calendar: hover {
+}
+
+.icon-calendar: focus {
+}
+
+.submitbutton {
+  font-size: 21px;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.submitbutton:hover {
+  background-color: #669ec0;
+}
+
+.submitbutton:focus {
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+}
+
+.social-button:hover {
+}
+
+.social-button:focus {
+}
+
+.academy-button {
+}
+
+.academy-button:hover {
+}
+
+.academy-button:focus {
+}
+
+.body-hotels {
+  text-align: left;
+  line-height: 21px;
+}
+
+.search-form {
+  background-image: url("img/filter-background.png");
+  background-color: #669ec0;
+  color: #ffffff;
+}
+
+.search-form p {
+  font-size: 16px;
+}
+
+.paragraph-checkbox {
+  font-weight: bold;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+}
+
+.filter-input:disabled {
+}
+
+.slider {
+}
+
+.slider:hover,
+.slider:focus {
+}
+
+.sorting h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting-parameter {
+  list-style: none;
+}
+
+.sorting-parameter a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.sorting-parameter a:hover {
+  color: #81b3d2;
+}
+
+.sorting-parameter a:focus {
+  color: #000000;
+  text-decoration:none;
+}
+
+.sorting-parameter a:active {
+  color: #81b3d2;
+  text-decoration:none;
+}
+
+.result-hotels h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hotels {
+  list-style: none;
+}
+
+.more {
+  background-color: #81b3d2;
+}
+
+.more a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more a:hover {
+  background-color: #669ec0;
+}
+
+.more a:focus {
+  color: #81b2ce;
+  background-color: #5496bd;
+}
+
+.book {
+  background-color: #766357;
+}
+
+.book a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book a:hover {
+  background-color: #604e43;
+}
+
+.book a:focus {
+  color: #81b2ce;
+  background-color: #857871;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
