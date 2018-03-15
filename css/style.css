@@ -8,19 +8,28 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  background-color: f2f2f2; /*добавить тень*/
+  background-color: #f2f2f2; /*добавить тень*/
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-weight: bold;
 }
 
 h1 {
   font-size: 21px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.h2-features {
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .main-header {
@@ -71,14 +80,21 @@ h1 {
 }
 
 .features-list li:first-child,
-.features-list li:nth-child(2) {
+.features-list li:nth-child(5) {
   background-color: #81b3d2;
   color: #ffffff;
 }
-/*не срабатывает стиль для 2 пункта*/
+
+.h3-additional-features {
+  font-size: 21px;
+}
 
 .additional-features {
   background-color: #eeeeee;
+}
+
+.additional-features h3 {
+  text-transform: uppercase;
 }
 
 .search h2 {
@@ -91,8 +107,8 @@ h1 {
 }
 
 .search-button {
-  font-size: 21px;
   font: inherit;
+  font-size: 21px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766257;
@@ -145,15 +161,15 @@ h1 {
 .icon-calendar {
 }
 
-.icon-calendar: hover {
+.icon-calendar:hover {
 }
 
-.icon-calendar: focus {
+.icon-calendar:focus {
 }
 
 .submitbutton {
-  font-size: 21px;
   font: inherit;
+  font-size: 21px;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
@@ -171,6 +187,18 @@ h1 {
 
 .main-footer {
   background-color: #ffffff;
+}
+
+.hashtag {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.academy-button {
+  text-decoration: none;
+  color: #000000;
 }
 
 .social-list {
@@ -201,7 +229,8 @@ h1 {
 }
 
 .search-form {
-  background-image: url("img/filter-background.png");
+  background-image: url("../img/filter-background.png");
+  background-repeat: no-repeat;
   background-color: #669ec0;
   color: #ffffff;
 }
@@ -226,6 +255,14 @@ h1 {
 
 .slider:hover,
 .slider:focus {
+}
+
+.button-ghost {
+  color: #ffffff;
+  background-color: #81b3d2;
+  border:  1px solid #ffffff;
+  border-radius: 2px;
+  opacity: 0,1;
 }
 
 .sorting h3 {

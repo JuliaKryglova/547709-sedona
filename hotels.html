@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <link href="css\style.css" rel="stylesheet" type="text/css">
-    <link href="css\normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="body-hotels">
 
-  <!-- Шапка сайта -->
     <header class="main-header">
           <nav class="main-navigation">
-          <!-- сюда вставить лого в панель навигации -->
             <a href="index.html">
               <img src="img/logo.png" width="138" height="70" alt="logo">
             </a>
@@ -25,9 +23,7 @@
           </nav>
     </header>
 
-    <!-- Основное содержимое -->
     <main>
-      <!-- Здесь форма поиска-->
       <section class="search-form">
         <h2 class="visually-hidden">Форма поиска</h2>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
@@ -69,11 +65,10 @@
             <span> </span>
             <span> </span>
           </div>
-          <button type="submit">Показать</button>
+          <button type="submit" class="button-ghost">Показать</button>
         </form>
       </section>
 
-      <!-- Сортировка-->
       <section class="sorting">
         <h2> Найдено: 3 </h2>
         <ul class="sorting-parameter">
@@ -85,7 +80,7 @@
           <li><a href="#"><!-- По убыванию--></a></li>
         </ul>
       </section>
-      <!-- Результаты поиска-->
+
       <section class="result-hotels">
         <ul class="hotels">
           <li>
@@ -122,9 +117,8 @@
       </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="main-footer">
-      <a href="https://www.instagram.com/explore/tags/visitsedona/"> #visitsedona </a>
+      <a href="https://www.instagram.com/explore/tags/visitsedona/" class="hashtag"> #visitsedona </a>
       <div class="footer-social">
         <ul class="social-list">
           <li><a class="social-button" href="#"> Твиттер </a></li>
