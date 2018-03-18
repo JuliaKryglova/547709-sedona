@@ -37,14 +37,20 @@ h1 {
 
 .main-navigation {
   font-weight: bold;
+  background-color: #ffffff;
 }
 
 .main-header-logo {
+
 }
 
 .site-navigation {
   list-style: none;
-  background-color: #ffffff;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
 }
 
 .site-navigation a {
@@ -77,6 +83,26 @@ h1 {
 
 .features-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 256px;
+  margin: auto;
+  padding: 0;
+}
+
+.features-list li:first-child {
+  display: flex;
+  min-width: 1200;
+}
+
+.features-list li:nth-child(5) {
+  display: flex;
+  min-width: 1200;
+}
+
+.img-features1 {
+  flex-grow:1;
 }
 
 .features-list li:first-child,
@@ -90,7 +116,9 @@ h1 {
 }
 
 .additional-features {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  min-height: 330px;
+  width: 400px;
 }
 
 .additional-features h3 {
@@ -113,6 +141,8 @@ h1 {
   color: #ffffff;
   background-color: #766257;
   border: none;
+  padding: 19px 140px;
+  margin-bottom: 56px;
 }
 
 .search-button:hover {
@@ -123,14 +153,41 @@ h1 {
   background-color: #503e34;
 }
 
+.booking-form {
+
+}
+
 .booking-parameter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+  width: 574px;
   font-weight: bold;
+}
+
+.booking-parameter label {
+
 }
 
 .booking-parameter input {
   background-color: #f2f2f2;
   border: none;
 }
+
+.booking-parameter input:nth-child(1),
+.booking-parameter input:nth-child(2) {
+  height: 40px;
+  width: 347px;
+  margin-bottom: 30px;
+}
+
+.booking-parameter input:nth-child(3),
+.booking-parameter input:nth-child(4) {
+  height: 40px;
+  width: 117px;
+}
+
 
 .booking-parameter input:hover {
   background-color: #ebebeb;
@@ -175,6 +232,12 @@ h1 {
   border: none;
   color: #ffffff;
   background-color: #81b3d2;
+  padding-top: 18px;
+  padding-left: 197px;
+  padding-right: 197px;
+  padding-bottom: 23px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .submitbutton:hover {
@@ -187,6 +250,11 @@ h1 {
 
 .main-footer {
   background-color: #ffffff;
+  display: flex;
+  width: 1200px;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
 }
 
 .hashtag {
@@ -203,6 +271,7 @@ h1 {
 
 .social-list {
   list-style: none;
+  display: flex;
 }
 
 .social-button {
@@ -239,6 +308,43 @@ h1 {
   font-size: 16px;
 }
 
+.booking-form {
+  display: flex;
+  width: 1200px;
+  min-height: 219px;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  margin: auto;
+  padding: 0;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  margin: auto;
+  padding: 0;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: auto;
+  padding: 0;
+}
+
 .paragraph-checkbox {
   font-weight: bold;
 }
@@ -259,11 +365,22 @@ h1 {
 
 .button-ghost {
   color: #ffffff;
-  background-color: #81b3d2;
+  background-color: none;
   border:  1px solid #ffffff;
   border-radius: 2px;
   opacity: 0,1;
+  width: 134px;
+  height: 34px;
 }
+
+.sorting {
+  display: flex;
+}
+
+.sorting-parameter {
+  display: flex;
+}
+
 
 .sorting h3 {
   font-size: 21px;
@@ -273,6 +390,27 @@ h1 {
 
 .sorting-parameter {
   list-style: none;
+}
+
+.sorting-parameter li:nth-child(1) {
+  padding-right: 50px;
+}
+
+.sorting-parameter li:nth-child(2) {
+  padding-right: 39px;
+}
+
+.sorting-parameter li:nth-child(3) {
+  padding-right: 33px;
+}
+
+.sorting-parameter li:nth-child(4) {
+  padding-right: 34px;
+}
+
+.sorting-parameter li:nth-child(5),
+.sorting-parameter li:nth-child(6) {
+  align-items: flex-end;
 }
 
 .sorting-parameter a {
@@ -299,12 +437,26 @@ h1 {
   font-weight: bold;
 }
 
-.hotels {
-  list-style: none;
+.hotels-items {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.name-hotel {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-status {
+  display: flex;
+  flex-direction: column;
 }
 
 .more {
   background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
 }
 
 .more a {
@@ -324,6 +476,8 @@ h1 {
 
 .book {
   background-color: #766357;
+  width: 143px;
+  height: 27px;
 }
 
 .book a {
