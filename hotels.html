@@ -8,6 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="body-hotels">
+    <div class="wrapper">
 
     <header class="main-header">
       <nav class="main-navigation">
@@ -15,18 +16,18 @@
           <img src="img/logo.png" width="138" height="70" alt="logo">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
+          <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
       <section class="search-form">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="bookingform-hotels" action="https://echo.htmlacademy.ru" method="post">
           <div class="column-1">
             <p class="paragraph-checkbox"> Инфраструктура: </p>
             <div>
@@ -78,12 +79,12 @@
       <section class="sorting">
         <h2> Найдено: 3 </h2>
         <ul class="sorting-parameter">
-          <li>Сортировка</li>
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
-          <li><a href="#"><!-- По возрастанию--></a></li>
-          <li><a href="#"><!-- По убыванию--></a></li>
+          <li class="parameter-sort">Сортировка</li>
+          <li class="parametr-price"><a href="#">По цене</a></li>
+          <li class="parametr-type"><a href="#">По типу</a></li>
+          <li class="parametr-rating"><a href="#">По рейтингу</a></li>
+          <li class="parametr-big"><a href="#"><!-- По возрастанию--></a></li>
+          <li class="parametr-little"><a href="#"><!-- По убыванию--></a></li>
         </ul>
       </section>
 
@@ -91,7 +92,7 @@
           <div class="hotels-items">
             <img src="img/amara_resort.jpg" width="135" height="90" alt="Amara resort & spa">
             <div class="name-hotel">
-              <h3> Amara resort & spa </h3>
+              <span class="name-of-hotel"> Amara resort & spa </span>
               <span>Гостиница</span>
               <span>от 4000 р. </span>
               <div class="more"><a href="#">Подробнее </a></div>
@@ -105,7 +106,7 @@
           <div class="hotels-items">
             <img src="img/desert_quail.jpg" width="135" height="90" alt="Desert quail inn">
             <div class="name-hotel">
-              <h3> Desert quail inn </h3>
+              <span class="name-of-hotel"> Desert quail inn </span>
               <span>Мотель</span>
               <span>от 3000 р. </span>
               <div class="more"><a href="#">Подробнее </a></div>
@@ -119,7 +120,7 @@
           <div class="hotels-items">
             <img src="img/villas_at_poco.jpg" width="135" height="90" alt="Villas at poco diablo">
             <div class="name-hotel">
-              <h3> Villas at poco diablo </h3>
+              <span class="name-of-hotel"> Villas at poco diablo </span>
               <span>Апартаменты</span>
               <span>от 2000 р. </span>
               <div class="more"><a href="#">Подробнее </a></div>
@@ -145,5 +146,6 @@
       <a class="academy-button" href="https://htmlacademy.ru/intensive/htmlcss"> websiteby </a>
     </footer>
 
+    </div>
   </body>
 </html>

@@ -8,6 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="wrapper">
 
     <header class="main-header">
           <nav class="main-navigation">
@@ -24,16 +25,18 @@
     </header>
 
     <main class="container">
-      <img src="img/background.jpg" width="1200" height="780" alt="Sedona">
+      <img src="img/background.jpg" width="1200" height="556" alt="Sedona">
       <section class="features">
         <h1> Седона — небольшой городок в АРИЗОНЕ, заслуживающий большего! </h1>
         <h2 class="h2-features"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </h2>
         <ul class="features-list">
-          <li class="features-item">
-            <h3 class="h3-additional-features"> Настоящий городок </h3>
-            <span> — №1 — </span>
-            <p>Седона - не аттракцион для туристов </p>
-            <img src="img/features1.jpg" width="511" height="256" alt="features1" class="img-features1">
+          <li class="features-item real-city">
+            <div class="wrap-realcity">
+              <h3 class="h3-additional-features"> Настоящий городок </h3>
+              <span> — №1 — </span>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь </p>
+            </div>
+            <img src="img/features1.jpg" width="800" height="256" alt="features1" class="img-features1">
           </li>
           <li class="additional-features">
             <h3 class="h3-additional-features"> Жилье </h3>
@@ -47,11 +50,13 @@
             <h3 class="h3-additional-features"> Сувениры </h3>
             <p> Не только китайского, но и местного производства! </p>
           </li>
-          <li class="features-item">
-            <img src="img/features2.jpg" width="511" height="255" alt="features2">
-            <h3 class="h3-additional-features"> Там есть мост дьявола </h3>
-            <span> — №2 — </span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+          <li class="features-item devil-bridge">
+            <img src="img/features2.jpg" width="800" height="256" alt="features2">
+            <div class="wrap-devilbridge">
+              <h3 class="h3-additional-features"> Там есть мост дьявола </h3>
+              <span> — №2 — </span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+            </div>
           </li>
           <li class="features-item">
             <h3 class="h3-additional-features"> Небольшая площадь </h3>
@@ -74,18 +79,20 @@
       <section class="search">
         <h2> Заинтересовались? </h2>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="search-box">
         <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
+        <div class="form-shadow">
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="booking-parameter">
             <label for="date-of-arrival">Дата заезда</label>
-            <input type="text" name="date-of-arrival" id="date-of-arrival">
+            <input type="text" name="date-of-arrival" id="date-of-arrival" class="date-field">
             <!-- Здесь будет значок календаря -->
             <span class="icon-calendar">
             </span>
           </div>
           <div class="booking-parameter">
             <label for="date-of-departure">Дата выезда</label>
-            <input type="text" name="date-of-departure" id="date-of-departure">
+            <input type="text" name="date-of-departure" id="date-of-departure" class="date-field">
             <!-- Здесь будет значок календаря -->
             <span class="icon-calendar">
             </span>
@@ -93,19 +100,21 @@
           <div class="booking-parameter">
             <label for="adults">Взрослые</label>
             <button type="button" class="plus-button"> + </button>
-            <input type="number" id="adults" name="name" value="2">
+            <input type="number" id="adults" name="name" value="2" class="people-field">
             <button type="button" class="minus-button"> - </button>
           </div>
           <div class="booking-parameter">
           <label for="children">Дети</label>
           <button type="button" class="plus-button"> + </button>
-          <input type="number" id="children" name="name" value="0">
+          <input type="number" id="children" name="name" value="0" class="people-field">
           <button type="button" class="minus-button"> - </button>
-        </div>
+          </div>
           <div class="submit-button">
           <button type="submit" class="submitbutton">Найти</button>
           </div>
+          </div>
         </form>
+      </div>
       </section>
 
       <div>
@@ -126,5 +135,6 @@
       <a class="academy-button" href="https://htmlacademy.ru/intensive/htmlcss"> website by </a>
     </footer>
 
+   </div>
   </body>
 </html>

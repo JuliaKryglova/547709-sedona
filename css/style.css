@@ -6,17 +6,23 @@ body {
   line-height: 26px;
   font-weight: normal;
   color: #000000;
-  text-align: center;
   text-transform: uppercase;
   background-color: #f2f2f2; /*добавить тень*/
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 h1, h2, h3 {
   font-weight: bold;
+  text-align: center;
 }
 
 h1 {
@@ -41,19 +47,27 @@ h1 {
 }
 
 .main-header-logo {
-
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .site-navigation {
   list-style: none;
-  margin: auto;
-  padding: 0;
   display: flex;
   justify-content: space-around;
-  width: 1200px;
+  flex-wrap: wrap;
+  min-height: 56px;
+  margin: auto;
+  padding: 0;
 }
 
 .site-navigation a {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: #000000;
 }
 
@@ -85,30 +99,38 @@ h1 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
   min-height: 256px;
   margin: auto;
   padding: 0;
+  text-align: center;
 }
 
-.features-list li:first-child {
+.real-city,
+.devil-bridge {
   display: flex;
-  min-width: 1200;
+  width: 1200px;
+  background-color: #81b3d2;
+  color: #ffffff;
 }
 
-.features-list li:nth-child(5) {
+.wrap-realcity {
   display: flex;
-  min-width: 1200;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 45px;
+}
+
+.wrap-devilbridge {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
 }
 
 .img-features1 {
-  flex-grow:1;
 }
 
-.features-list li:first-child,
-.features-list li:nth-child(5) {
-  background-color: #81b3d2;
-  color: #ffffff;
+.img-features2 {
+  flex-grow: 1;
 }
 
 .h3-additional-features {
@@ -116,6 +138,7 @@ h1 {
 }
 
 .additional-features {
+  text-align: center;
   background-color: #ffffff;
   min-height: 330px;
   width: 400px;
@@ -125,6 +148,20 @@ h1 {
   text-transform: uppercase;
 }
 
+.search-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  width: 569px;
+  min-height: 482px;
+  font-weight: bold;
+}
+
+.form-shadow {
+  box-shadow: 0 0 12px 2px #ededed;
+}
+
 .search h2 {
   font-size: 30px;
   line-height: 36px;
@@ -132,17 +169,19 @@ h1 {
 
 .search p {
   line-height: 24px;
+  text-align: center;
 }
 
 .search-button {
-  font: inherit;
   font-size: 21px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766257;
   border: none;
-  padding: 19px 140px;
-  margin-bottom: 56px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
 }
 
 .search-button:hover {
@@ -154,20 +193,14 @@ h1 {
 }
 
 .booking-form {
-
+  margin-top: 55px;
 }
 
 .booking-parameter {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0;
-  width: 574px;
-  font-weight: bold;
+  margin-left: 56px;
 }
 
 .booking-parameter label {
-
 }
 
 .booking-parameter input {
@@ -175,19 +208,16 @@ h1 {
   border: none;
 }
 
-.booking-parameter input:nth-child(1),
-.booking-parameter input:nth-child(2) {
+.date-field {
   height: 40px;
   width: 347px;
   margin-bottom: 30px;
 }
 
-.booking-parameter input:nth-child(3),
-.booking-parameter input:nth-child(4) {
+.people-field {
   height: 40px;
   width: 117px;
 }
-
 
 .booking-parameter input:hover {
   background-color: #ebebeb;
@@ -232,10 +262,9 @@ h1 {
   border: none;
   color: #ffffff;
   background-color: #81b3d2;
-  padding-top: 18px;
-  padding-left: 197px;
-  padding-right: 197px;
-  padding-bottom: 23px;
+  width: 458px;
+  min-height: 58px;
+  margin-left: 56px;
   margin-top: 55px;
   margin-bottom: 55px;
 }
@@ -251,8 +280,8 @@ h1 {
 .main-footer {
   background-color: #ffffff;
   display: flex;
-  width: 1200px;
   justify-content: space-around;
+  align-items: center;
   margin: auto;
   padding: 0;
 }
@@ -261,11 +290,17 @@ h1 {
   text-decoration: none;
   font-size: 21px;
   font-weight: bold;
+  width: 400px;
   color: #000000;
+}
+
+.footer-social {
+  width: 400px;
 }
 
 .academy-button {
   text-decoration: none;
+  width: 400px;
   color: #000000;
 }
 
@@ -308,9 +343,8 @@ h1 {
   font-size: 16px;
 }
 
-.booking-form {
+.bookingform-hotels {
   display: flex;
-  width: 1200px;
   min-height: 219px;
 }
 
@@ -318,22 +352,16 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 241px;
-  margin: auto;
+  margin-left: 73px;
+  margin-top: 31px;
   padding: 0;
 }
 
 .column-2 {
   display: flex;
   flex-direction: column;
-  width: 288px;
-  margin: auto;
-  padding: 0;
-}
-
-.column-2 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  flex-grow: 1;
+  margin-top: 31px;
   padding: 0;
 }
 
@@ -341,7 +369,8 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  margin: auto;
+  width: 400px;
+  margin-top: 31px;
   padding: 0;
 }
 
@@ -374,7 +403,10 @@ h1 {
 }
 
 .sorting {
+  padding-left: 73px;
   display: flex;
+  align-items: baseline;
+  background-color: #fefefe;
 }
 
 .sorting-parameter {
@@ -392,24 +424,18 @@ h1 {
   list-style: none;
 }
 
-.sorting-parameter li:nth-child(1) {
-  padding-right: 50px;
+.parameter-sort {
+  margin-right: 39px;
 }
 
-.sorting-parameter li:nth-child(2) {
-  padding-right: 39px;
+.parametr-price,
+.parametr-type,
+.parametr-rating {
+  margin-right: 33px;
 }
 
-.sorting-parameter li:nth-child(3) {
-  padding-right: 33px;
-}
-
-.sorting-parameter li:nth-child(4) {
-  padding-right: 34px;
-}
-
-.sorting-parameter li:nth-child(5),
-.sorting-parameter li:nth-child(6) {
+.parametr-big,
+.parametr-little {
   align-items: flex-end;
 }
 
@@ -432,7 +458,12 @@ h1 {
   text-decoration:none;
 }
 
-.result-hotels h3 {
+.result-hotels {
+  padding-left: 73px;
+  background-color: #fefefe;
+}
+
+.name-of-hotel {
   font-size: 21px;
   font-weight: bold;
 }
@@ -446,17 +477,21 @@ h1 {
 .name-hotel {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  padding-left: 30px;
 }
 
 .hotel-status {
   display: flex;
   flex-direction: column;
+  width: 241px;
 }
 
 .more {
+  display: inline-block;
   background-color: #81b3d2;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
 }
 
 .more a {
@@ -475,6 +510,7 @@ h1 {
 }
 
 .book {
+  display: inline-block;
   background-color: #766357;
   width: 143px;
   height: 27px;
@@ -496,6 +532,7 @@ h1 {
 }
 
 .rating {
-  color: #666666;
   background-color: #f2f2f2;
+  width: 111px;
+  min-height: 27px;
 }
