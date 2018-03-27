@@ -65,10 +65,21 @@ h1 {
   padding: 0;
 }
 
+.site-navigation li {
+  width: 240px;
+}
+
+.navigation-left {
+  text-align: left;
+}
+
+.navigation-right {
+  text-align: right;
+}
+
 .site-navigation a {
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  margin-top: 15px;
   color: #000000;
 }
 
@@ -104,6 +115,12 @@ h1 {
   margin-bottom: 36px;
 }
 
+.h1-features,
+.h2-features {
+  width: 576px;
+  margin-left: 312px;
+}
+
 .features-list {
   list-style: none;
   display: flex;
@@ -117,10 +134,22 @@ h1 {
 .square,
 .road,
 .tourist {
+  box-sizing: border-box;
   width: 400px;
-  padding-top: 45px;
-  padding-bottom: 62px;
+  padding-top: 51px;
+  padding-bottom: 51px;
   background-color: #eeeeee;
+}
+
+.square {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+.road,
+.tourist {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .real-city,
