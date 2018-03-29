@@ -73,10 +73,12 @@ h1 {
 
 .navigation-left {
   text-align: left;
+  padding-left: 1px;
 }
 
 .navigation-right {
   text-align: right;
+  padding-right: 2px;
 }
 
 .site-navigation li:nth-of-type(2) {
@@ -336,6 +338,8 @@ h1 {
 .booking-parameter input {
   background-color: #f2f2f2;
   border: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .date-field {
@@ -395,12 +399,13 @@ h1 {
   background: #f2f2f2;
   width: 33px;
   height: 38px;
-  padding: 0;
-  transform: translateY(-7px);
+  padding-top: 0;
+  padding-bottom: 0;
+  transform: translateY(-6px);
 }
 
 .minus-child {
-  transform: translateY(-7px) translateX(8px);
+  transform: translateY(-6px) translateX(8px);
 }
 
 .minus-button::before {
@@ -410,6 +415,7 @@ h1 {
   height: 3px;
   background-color: #a9a9a9;
   left: 12px;
+  top: 19px;
 }
 
 .minus-button:hover::before {
@@ -427,7 +433,7 @@ h1 {
   width: 33px;
   height: 38px;
   padding: 0;
-  transform: translateY(-7px);
+  transform: translateY(-6px);
 }
 
 .plus-button::before {
@@ -436,6 +442,7 @@ h1 {
   width: 11px;
   height: 3px;
   left: 10px;
+  top: 19px;
   background-color: #a9a9a9
 }
 
@@ -639,6 +646,9 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
 }
 
+input[type="checkbox"]:disabled {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 .column-3 {
   display: flex;
@@ -768,6 +778,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding-left: 72px;
   padding-top: 10px;
+  padding-bottom: 15px;
   background-color: #fefefe;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -850,7 +861,7 @@ input[type="checkbox"] {
   box-sizing: border-box;
   min-height: 150px;
   padding-left: 73px;
-  padding-top: 42px;
+  padding-top: 28px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -858,6 +869,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  box-sizing: border-box;
   width: 364px;
   padding-left: 30px;
 }
@@ -955,12 +967,13 @@ input[type="checkbox"] {
   display: block;
   width: 111px;
   margin-bottom: 40px;
+  text-align: right;
 }
 
 .star-raiting {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   background-image: url("../img/star-rating.svg");
   background-repeat: no-repeat;
 }
@@ -974,4 +987,17 @@ input[type="checkbox"] {
   min-height: 27px;
   padding-left: 16px;
   padding-top: 2px;
+}
+
+.footer-hotels {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255,255,255,0.9);
+  box-sizing: border-box;
+  min-height: 120px;
+  padding: 0;
+  margin-top: 0 auto;
 }
