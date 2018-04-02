@@ -75,6 +75,7 @@ h1 {
 }
 
 .site-navigation li {
+  padding-top: 15px;
   width: 210px;
 }
 
@@ -86,20 +87,18 @@ h1 {
 .navigation-right {
   text-align: right;
   padding-right: 2px;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 .site-navigation li:nth-of-type(2) {
-  margin-right: 61px;
+  padding-right: 61px;
 }
 
 .site-navigation li:nth-of-type(3) {
-  margin-left: 61px;
+  padding-left: 62px;
 }
 
 .site-navigation a {
-  display: block;
-  margin-top: 15px;
   color: #000000;
 }
 
@@ -119,14 +118,20 @@ h1 {
   background-color: #ffffff;
 }
 
+.main-photo {
+ padding-bottom: 55px;
+  background-color: #ffffff;
+}
+
 .features {
   line-height: 21px;
   margin-top: -5px;
+  background-color: #ffffff;
 }
 
 .h1-features {
   display: block;
-  margin-top: 53px;
+  margin-top: 54px;
   margin-bottom: 30px;
   font-size: 21px;
 }
@@ -135,7 +140,7 @@ h1 {
   display: block;
   color: #333333;
   margin-top: 3px;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .h1-features,
@@ -284,9 +289,14 @@ h1 {
   margin-bottom: 21px;
 }
 
+.search {
+  background-color: #ffffff;
+  padding-top: 22px;
+}
+
 .search h2 {
   display: block;
-  margin-top: 46px;
+
   font-size: 30px;
   line-height: 36px;
 }
@@ -320,13 +330,6 @@ h1 {
   width: 569px;
   min-height: 482px;
   font-weight: bold;
-}
-
-.map-sedona {
-  position: absolute;
-  -webkit-transform: translateY(-363px);
-      -ms-transform: translateY(-363px);
-          transform: translateY(-363px);
 }
 
 .form-shadow {
@@ -410,8 +413,7 @@ h1 {
 
 .icon-calendar {
   position: absolute;
-  margin-left: 428px;
-  margin-top: 4px;
+  transform: translateX(428px) translateY(4px);
 }
 
 .icon-calendar {
@@ -554,6 +556,13 @@ h1 {
 .submitbutton:focus {
   background-color: #5496bd;
   color: #88b6d1;
+}
+
+.map-sedona {
+  position: absolute;
+  -webkit-transform: translateY(-363px);
+      -ms-transform: translateY(-363px);
+          transform: translateY(-363px);
 }
 
 .main-footer {
@@ -997,7 +1006,7 @@ input[type="checkbox"]:checked:disabled+label {
   fill: #81b3d2;
 }
 
-.parametr-little-active {
+.parametr-little-active svg {
   fill: #81b3d2;
 }
 
