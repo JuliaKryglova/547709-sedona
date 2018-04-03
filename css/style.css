@@ -355,21 +355,53 @@ a {
   animation: bounce 0.6s;
 }
 
+.active {
+ display: block;
+ animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 @keyframes bounce {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-100px) translateX(-286px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(30px) translateX(-286px);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateX(-286px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(-286px);
+  }
+
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -695,8 +727,8 @@ margin: 0 auto;
 .academy-button {
   text-decoration: none;
   color: #000000;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-top: 6px;
+  padding-left: 7px;
 
 }
 

@@ -189,11 +189,11 @@
               <div class="booking-parameter">
                 <label for="adults">Взрослые:</label>
                 <button type="button" class="minus-button"><span class="visually-hidden">Минус</span></button>
-                <input type="text" id="adults" name="name" value="2" class="people-field">
+                <input type="text" id="adults" name="people" value="2" class="people-field">
                 <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
                 <label for="children" class="children1">Дети:</label>
                 <button type="button" class="minus-button minus-child"><span class="visually-hidden">Минус</span></button>
-                <input type="text" id="children" name="name" value="0" class="people-field children-field">
+                <input type="text" id="children" name="people" value="0" class="people-field children-field">
                 <button type="button" class="plus-button"><span class="visually-hidden">Плюс</span></button>
               </div>
               <div class="submit-button">
@@ -257,17 +257,25 @@
   var popup = document.querySelector(".form-shadow");
   var show = document.querySelector(".form-show");
   var arrival = popup.querySelector("[name=date-of-arrival]");
-
-
+  var departure = popup.querySelector("[name=date-of-departure]");
+  var people = popup.querySelector("[name=people");
+  var form = popup.querySelector("booking-form");
 
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("form-show");
     arrival.focus();
-    popup.classList.toggle('active')
-
-
+    popup.classList.toggle("active");
 });
+
+  form.addEventListener("submit", function (evt) {
+   if (!arrival.value || !departure.value || !people.value) {
+     evt.preventDefault();
+     popup.classList.remove("modal-error");
+     popup.offsetWidth = popup.offsetWidth;
+     popup.classList.add("modal-error");
+   }
+ });
 
 </script>
 </body>
