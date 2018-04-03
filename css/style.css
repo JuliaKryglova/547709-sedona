@@ -24,7 +24,11 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .h2-search {
@@ -322,31 +326,32 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  margin: 0 auto;
+  margin-left: 150px;
   padding: 0;
-  width: 569px;
+  padding-top: 31px;
+  margin: 0 auto;
   min-height: 482px;
   font-weight: bold;
 }
 
 .form-shadow {
-  display: none;
+  display: block;
   -webkit-box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.1);
   position: absolute;
   z-index: 4;
   background-color: #ffffff;
-  top: 119px;
+  top: 120px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 568px;
-  padding-top: 55px;
+  padding-top: 53px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .form-show {
-  display: block;
-  position: absolute;
-  z-index: 4;
+  display: none;
   animation: bounce 0.6s;
 }
 
@@ -371,6 +376,7 @@ a {
 .search-button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  width: 569px;
   min-height: 86px;
   font-size: 21px;
   text-align: center;
@@ -379,8 +385,8 @@ a {
   color: #ffffff;
   background-color: #766257;
   border: none;
-  margin-top: 32px;
-  padding-top: 30px;
+  margin: 0 auto;
+  padding-top: 32px;
   padding-bottom: 33px;
 }
 
@@ -434,7 +440,7 @@ a {
 .icon-calendar {
   position: absolute;
   right: 64px;
-  top: 6px;
+  top: 7px;
 }
 
 .icon-calendar {
@@ -589,9 +595,7 @@ a {
 }
 
 .map-sedona {
-  position: absolute;
-  top: 120px;
-  left: -315px;
+margin: 0 auto;
 }
 
 .main-footer {
@@ -608,9 +612,9 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0;
+  padding: 15px 0 15px 0;
   min-height: 120px;
-  margin-top: 111px;
+  margin-top: -121px;
 }
 
 .wrap-hashtag {
@@ -679,6 +683,8 @@ a {
   position: relative;
   width: 400px;
   margin-bottom: 3px;
+  align-items: center;
+  align-content: center
 }
 
 .wrap-academy p {
@@ -689,9 +695,9 @@ a {
 .academy-button {
   text-decoration: none;
   color: #000000;
-  position: absolute;
-  top: 5px;
-  right: 100px;
+  padding-top: 5px;
+  padding-left: 5px;
+
 }
 
 .academy-button:hover path, .academy-button:focus path {

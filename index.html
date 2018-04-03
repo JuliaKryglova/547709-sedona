@@ -136,7 +136,7 @@
           <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
           <span class="visually-hidden">Как добраться до Седоны?</span>
           <img src="img/map.jpg" width="1200" height="594" alt="Расположение Седоны" class="map-sedona">
-          <div class="form-shadow" onclick="toggle('active')">
+          <div class="form-shadow">
             <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="booking-parameter">
                 <label for="date-of-arrival">Дата заезда:</label>
@@ -257,7 +257,7 @@
   var popup = document.querySelector(".form-shadow");
   var show = document.querySelector(".form-show");
   var arrival = popup.querySelector("[name=date-of-arrival]");
-  var form = popup.querySelector("form");
+
 
 
   button.addEventListener("click", function (evt) {
@@ -265,19 +265,8 @@
     popup.classList.add("form-show");
     arrival.focus();
     popup.classList.toggle('active')
-})
-  button.addEventListener("click", function toggle() {
-  show.toggle('active');
 
-})
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-    }
-  }
 });
 
 </script>
